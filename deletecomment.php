@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect('localhost', 'root', '');
+$connection = mysqli_connect('localhost', 'root', 'Massword@123');
 $db = mysqli_select_db($connection, 'ecommerce');
 if (isset($_POST['delete'])) {
     $id = $_POST['id'];
