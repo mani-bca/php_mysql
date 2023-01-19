@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('localhost', 'root', '');
+$conn = new mysqli('localhost', 'root', 'Massword@123');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -14,7 +14,7 @@ if ($conn->query($query_datasade) === true) {
     echo "Error creating database: " . $conn->error;
 }
 
-$conn = new mysqli('localhost', 'root', '', 'ecommerce');
+$conn = new mysqli('localhost', 'root', 'Massword@123', 'ecommerce');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
