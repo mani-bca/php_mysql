@@ -24,7 +24,7 @@ class Connection
 
     public $host = 'localhost';
     public $user = 'root';
-    public $password = 'Massword@123';
+    public $password = 'dbconnection';
     public $db_name = 'ecommerce';
     public $conn;
 

@@ -1,5 +1,5 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', 'Massword@123', 'ecommerce');
+$conn = mysqli_connect('localhost', 'root', 'dbconnection', 'ecommerce');
 
 ?>

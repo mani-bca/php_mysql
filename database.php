@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('localhost', 'root', 'Massword@123');
+$conn = new mysqli('localhost', 'root', 'dbconnection');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -14,7 +14,7 @@ if ($conn->query($query_datasade) === true) {
     echo "Error creating database: " . $conn->error;
 }
 
-$conn = new mysqli('localhost', 'root', 'Massword@123', 'ecommerce');
+$conn = new mysqli('localhost', 'root', 'dbconnection', 'ecommerce');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -39,7 +39,7 @@ if ($conn->query($query_product) == true) {
     echo "Error creating table: " . $conn->error;
 }
 // create user table
-$query_user = "CREATE TABLE User (CREATE TABLE `user_info` (`id` int(100) NOT NULL AUTO_INCREMENT, `name` varchar(100) NOT NULL, `email` varchar(100) NOT NULL, `password` varchar(100) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4";
+$query_user = "CREATE TABLE `user_form` (`id` int(100) NOT NULL AUTO_INCREMENT, `name` varchar(100) NOT NULL, `email` varchar(100) NOT NULL, `password` varchar(100) NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4";
   
 if ($conn->query($query_user) === true) {
     echo "Table USER created successfully";
