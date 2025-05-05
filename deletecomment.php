@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect('localhost', 'root', 'dbconnection');
+$connection = mysqli_connect('webapp-mysql-db.ctoye4myy2b2.us-east-1.rds.amazonaws.com', 'admin', 'ChangeMe123!');
 $db = mysqli_select_db($connection, 'ecommerce');
 if (isset($_POST['delete'])) {
     $id = $_POST['id'];

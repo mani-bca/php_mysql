@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('localhost', 'root', 'dbconnection');
+$conn = new mysqli('webapp-mysql-db.ctoye4myy2b2.us-east-1.rds.amazonaws.com', 'admin', 'ChangeMe123!');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -14,7 +14,7 @@ if ($conn->query($query_datasade) === true) {
     echo "Error creating database: " . $conn->error;
 }
 
-$conn = new mysqli('localhost', 'root', 'dbconnection', 'ecommerce');
+$conn = new mysqli('webapp-mysql-db.ctoye4myy2b2.us-east-1.rds.amazonaws.com', 'admin', 'ChangeMe123!', 'ecommerce');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

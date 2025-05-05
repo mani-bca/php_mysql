@@ -22,9 +22,9 @@ session_start();
 class Connection
 {
 
-    public $host = 'localhost';
-    public $user = 'root';
-    public $password = 'dbconnection';
+    public $host = 'webapp-mysql-db.ctoye4myy2b2.us-east-1.rds.amazonaws.com';
+    public $user = 'admin';
+    public $password = 'ChangeMe123!';
     public $db_name = 'ecommerce';
     public $conn;
 
